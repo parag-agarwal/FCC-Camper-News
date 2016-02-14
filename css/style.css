@@ -1,0 +1,164 @@
+html{
+  width:100%;
+  background-color:#f9f9f9;
+  display:table;
+  position:absolute;
+}
+
+.master{
+  width:95%;
+  margin:0 auto;
+}
+
+.contributor{
+  margin-bottom:-1.3%;
+  padding-bottom:1.6%;
+  padding-left:5%;
+  margin-left:-4%;
+  padding-top:1%;
+  padding-right:2%;
+  border-radius:15px;
+  position:absolute;
+  bottom:0;
+}
+
+.title{
+  font-size: 40px;
+  text-align:center;
+  margin-top: 2.5%;
+  margin-bottom: 2%;
+}
+
+.left{
+  float:left;
+  width:73%;
+}
+
+.right{
+  float: right;
+  width:25%;
+}
+
+.story{
+  margin-top:0.3%;
+  margin-left:0.5%;
+  overflow:hidden;
+  position:relative;
+  height:320px;
+}
+
+.headline{
+  font-family:Arvo;
+  font-weight:400;
+  font-size:1.75em;
+  text-align:center;
+  padding-top:5%;
+  padding-bottom:4.5%;
+  white-space:nowrap;
+  margin-top:0;
+  margin-bottom:0%;
+  background-color:#FFF056;
+}
+
+img{
+  width:100%;
+  margin-right:2%;
+  margin-bottom:-2%;
+}
+
+a{
+  color:#333;
+  text-decoration:none;
+}
+
+p{
+  font-family:"Open Sans";
+  font-size:1.2em;
+  margin-left:4%;
+}
+
+
+@media screen and (min-width: 600px) {
+  .story{
+    width:75%;
+    height: 340px;
+    margin: 1% auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .story{
+    width:70%;
+    height:340px;
+    margin:1% auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .story{
+    width:49.5%;
+    margin-left:0.5%;
+    display:inline-block;
+    height:340px;
+    font-size: 0.95em;
+  }
+  .headline{
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .story{
+    width:49.5%;
+    display:inline-block;
+    margin-left:0.5%;
+    height:330px;
+  }
+  .headline{
+    font-size:24px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .story{
+    width:49.5%;
+    margin-left:0.5%;
+    display:inline-block;
+    font-size: 0.9em;
+    height: 330px;
+  }
+
+  .headline{
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .story{
+    width:49.5%;
+    margin-left:0.5%;
+    display:inline-block;
+    font-size: 0.96em;
+    height:320px;
+  }
+  
+  .headline{
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .story{
+    width:32.5%;
+    margin-left:0.5%;
+    display:inline-block;
+    font-size: 1em;
+  }
+  
+  .contributor{
+    font-size: 1.3em;
+  }
+  .headline{
+    font-size: 22px;
+  }
+}
