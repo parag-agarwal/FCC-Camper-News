@@ -94,7 +94,7 @@ $(document).ready(function() {
     //html+=JSON.stringify(json);
     json.forEach(function(val) {
       var palette = randomColorizer();
-      html += "<a href='" + val.link + "'>"
+      html += "<a href='" + val.link + "' target='_blank'>";
       html += "<div class='story' style='background-color:" + palette[1] + ";color:" + palette[3] + "'>";
       html += "<h1 class='headline' style='background-color:" + palette[0] + "; color:" + palette[3] + "'>" + val.headline.slice(0, 45);
       if (val.headline.length >= 45) html += "...</h1>";
@@ -115,9 +115,9 @@ $(document).ready(function() {
       html+="<p class='points'>Points: "+val.rank+"</p>";
       html += "</div>";
       html += "</div>";
-      html += "<p class='contributor' style='background-color:" + palette[0] + ";color:"+palette[3]+"'>By: @" + val.author.username + "</p>";
+      html += "<p class='contributor' style='background-color:" + palette[3] + ";color:"+palette[0]+"'>By: @" + val.author.username + "</p>";
       html += "</div></a>";
     });
     $(".master").html('' + html);
   });
-})
+});
