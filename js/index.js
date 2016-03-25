@@ -89,7 +89,7 @@ function randomColorizer() {
 
 $(document).ready(function() {
 
-  $.getJSON("http://www.freecodecamp.com/news/hot", function(json) {
+  $.getJSON("https://www.freecodecamp.com/news/hot", function(json) {
     var html = '';
     //html+=JSON.stringify(json);
     json.forEach(function(val) {
